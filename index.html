@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Asazad Amir Pathan - Python Software Engineer</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Theme Toggle -->
+		<button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+			<i class="fas fa-moon"></i>
+		</button>
+
+		<!-- Navigation -->
+		<nav class="navbar" id="navbar">
+			<div class="nav-container">
+				<div class="nav-logo">
+					<span>Asazad Pathan</span>
+				</div>
+				<div class="nav-menu" id="nav-menu">
+					<a href="#hero" class="nav-link">Home</a>
+					<a href="#skills" class="nav-link">Skills</a>
+					<a href="#projects" class="nav-link">Projects</a>
+					<a href="#experience" class="nav-link">Experience</a>
+					<a href="#education" class="nav-link">Education</a>
+					<a href="#contact" class="nav-link">Contact</a>
+				</div>
+				<div class="hamburger" id="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section id="hero" class="hero">
+			<div class="particles" id="particles"></div>
+			<div class="hero-content">
+				<div class="hero-main">
+					<div class="hero-text">
+						<h1 class="hero-name">Asazad Amir Pathan</h1>
+						<div class="hero-title">
+							<span>I'm a </span>
+							<span class="typing-text" id="typing-text">Python Developer</span>
+							<span class="cursor">|</span>
+						</div>
+						<p class="hero-bio">
+							I'm a Python-focused Software Engineer with 3 years of experience
+							developing robust, data-driven web applications. I specialize in
+							building scalable backend systems using FastAPI, and crafting rich
+							frontend experiences with Angular.
+						</p>
+						<div class="hero-buttons">
+							<a href="#projects" class="btn btn--primary">View Projects</a>
+							<a href="#contact" class="btn btn--outline">Download CV</a>
+						</div>
+					</div>
+					<div class="hero-avatar">
+						<div class="avatar-container">
+							<div class="avatar-bg"></div>
+							<img
+								src="SoftwareEngineer.png"
+								alt="Asazad Amir Pathan - Python Software Engineer"
+								class="avatar-image"
+								loading="lazy"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="hero-stats">
+					<div class="stat-item">
+						<div class="stat-number" data-target="25">0</div>
+						<div class="stat-label">Projects Completed</div>
+					</div>
+					<div class="stat-item">
+						<div class="stat-number" data-target="3">0</div>
+						<div class="stat-label">Years Experience</div>
+					</div>
+					<div class="stat-item">
+						<div class="stat-number" data-target="20">0</div>
+						<div class="stat-label">Technologies Mastered</div>
+					</div>
+					<div class="stat-item">
+						<div class="stat-number" data-target="98">0</div>
+						<div class="stat-label">Client Satisfaction</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills Section -->
+		<section id="skills" class="skills section">
+			<div class="container">
+				<h2 class="section-title">Technical Skills</h2>
+				<div class="skills-tabs">
+					<button class="tab-btn active" data-tab="backend">Backend</button>
+					<button class="tab-btn" data-tab="frontend">Frontend</button>
+					<button class="tab-btn" data-tab="cloud">Cloud</button>
+					<button class="tab-btn" data-tab="ml_data">ML & Data</button>
+					<button class="tab-btn" data-tab="tools">Tools</button>
+				</div>
+				<div class="skills-content">
+					<div class="skill-category active" data-category="backend">
+						<div class="skills-grid">
+							<div class="skill-card">
+								<div class="skill-icon">🐍</div>
+								<h4>Python</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="95"></div>
+								</div>
+								<span class="skill-level">95%</span>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">⚡</div>
+								<h4>FastAPI</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="90"></div>
+								</div>
+								<span class="skill-level">90%</span>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">🗄️</div>
+								<h4>SQL Server</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="85"></div>
+								</div>
+								<span class="skill-level">85%</span>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">🔗</div>
+								<h4>REST APIs</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="88"></div>
+								</div>
+								<span class="skill-level">88%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-category" data-category="frontend">
+						<div class="skills-grid">
+							<div class="skill-card">
+								<div class="skill-icon">🅰️</div>
+								<h4>Angular</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="88"></div>
+								</div>
+								<span class="skill-level">88%</span>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">🔷</div>
+								<h4>TypeScript</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="85"></div>
+								</div>
+								<span class="skill-level">85%</span>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">💛</div>
+								<h4>JavaScript</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="82"></div>
+								</div>
+								<span class="skill-level">82%</span>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">🌐</div>
+								<h4>HTML5</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="90"></div>
+								</div>
+								<span class="skill-level">90%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-category" data-category="cloud">
+						<div class="skills-grid">
+							<div class="skill-card">
+								<div class="skill-icon">☁️</div>
+								<h4>Microsoft Azure</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="92"></div>
+								</div>
+								<span class="skill-level">92%</span>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">⚡</div>
+								<h4>Azure Functions</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="88"></div>
+								</div>
+								<span class="skill-level">88%</span>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">🔄</div>
+								<h4>Azure DevOps</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="85"></div>
+								</div>
+								<span class="skill-level">85%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-category" data-category="ml_data">
+						<div class="skills-grid">
+							<div class="skill-card">
+								<div class="skill-icon">🤖</div>
+								<h4>Machine Learning</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="75"></div>
+								</div>
+								<span class="skill-level">75%</span>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">📊</div>
+								<h4>Scikit-learn</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="80"></div>
+								</div>
+								<span class="skill-level">80%</span>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">🔢</div>
+								<h4>NumPy</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="85"></div>
+								</div>
+								<span class="skill-level">85%</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-category" data-category="tools">
+						<div class="skills-grid">
+							<div class="skill-card">
+								<div class="skill-icon">📝</div>
+								<h4>Git</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="90"></div>
+								</div>
+								<span class="skill-level">90%</span>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">📮</div>
+								<h4>Postman</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="85"></div>
+								</div>
+								<span class="skill-level">85%</span>
+							</div>
+							<div class="skill-card">
+								<div class="skill-icon">🧪</div>
+								<h4>Pytest</h4>
+								<div class="skill-progress">
+									<div class="progress-bar" data-progress="80"></div>
+								</div>
+								<span class="skill-level">80%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section id="projects" class="projects section">
+			<div class="container">
+				<h2 class="section-title">Featured Projects</h2>
+				<div class="project-filters">
+					<button class="filter-btn active" data-filter="all">All</button>
+					<button class="filter-btn" data-filter="Machine Learning">
+						Machine Learning
+					</button>
+					<button class="filter-btn" data-filter="Full Stack">
+						Full Stack
+					</button>
+					<button class="filter-btn" data-filter="Automation">
+						Automation
+					</button>
+					<button class="filter-btn" data-filter="Data Analytics">
+						Data Analytics
+					</button>
+				</div>
+				<div class="projects-grid" id="projects-grid">
+					<div class="project-card" data-category="Machine Learning">
+						<div class="project-header">
+							<h3>Disease Risk Prediction System</h3>
+							<span class="project-badge">Machine Learning</span>
+						</div>
+						<p class="project-description">
+							Developed a disease risk prediction model using patient datasets
+							and Scikit-learn, achieving up to 92% accuracy with multiple
+							classifiers.
+						</p>
+						<div class="project-tech">
+							<span class="tech-tag">Python</span>
+							<span class="tech-tag">Scikit-learn</span>
+							<span class="tech-tag">FastAPI</span>
+							<span class="tech-tag">Angular</span>
+						</div>
+						<div class="project-actions">
+							<button
+								class="btn btn--sm btn--primary"
+								onclick="openProjectModal(1)"
+							>
+								View Details
+							</button>
+						</div>
+					</div>
+					<div class="project-card" data-category="Full Stack">
+						<div class="project-header">
+							<h3>Hospital Management System</h3>
+							<span class="project-badge">Full Stack</span>
+						</div>
+						<p class="project-description">
+							Full-stack application using Angular and FastAPI to manage patient
+							records, appointments, and staff allocations with role-based
+							access control.
+						</p>
+						<div class="project-tech">
+							<span class="tech-tag">Angular</span>
+							<span class="tech-tag">FastAPI</span>
+							<span class="tech-tag">SQL Server</span>
+							<span class="tech-tag">Azure DevOps</span>
+						</div>
+						<div class="project-actions">
+							<button
+								class="btn btn--sm btn--primary"
+								onclick="openProjectModal(2)"
+							>
+								View Details
+							</button>
+						</div>
+					</div>
+					<div class="project-card" data-category="Automation">
+						<div class="project-header">
+							<h3>Healthcare Automation Suite</h3>
+							<span class="project-badge">Automation</span>
+						</div>
+						<p class="project-description">
+							Built automation scripts in Python and Azure Functions to reduce
+							manual overhead by 30% for high-volume healthcare platforms.
+						</p>
+						<div class="project-tech">
+							<span class="tech-tag">Python</span>
+							<span class="tech-tag">Azure Functions</span>
+							<span class="tech-tag">FastAPI</span>
+							<span class="tech-tag">SQL Server</span>
+						</div>
+						<div class="project-actions">
+							<button
+								class="btn btn--sm btn--primary"
+								onclick="openProjectModal(3)"
+							>
+								View Details
+							</button>
+						</div>
+					</div>
+					<div class="project-card" data-category="Data Analytics">
+						<div class="project-header">
+							<h3>Data Analytics Dashboard</h3>
+							<span class="project-badge">Data Analytics</span>
+						</div>
+						<p class="project-description">
+							Created comprehensive analytics dashboard using Angular and Python
+							for business decision-makers with real-time data processing.
+						</p>
+						<div class="project-tech">
+							<span class="tech-tag">Angular</span>
+							<span class="tech-tag">Python</span>
+							<span class="tech-tag">Pandas</span>
+							<span class="tech-tag">SQL Server</span>
+						</div>
+						<div class="project-actions">
+							<button
+								class="btn btn--sm btn--primary"
+								onclick="openProjectModal(4)"
+							>
+								View Details
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience Section -->
+		<section id="experience" class="experience section">
+			<div class="container">
+				<h2 class="section-title">Professional Experience</h2>
+				<div class="timeline">
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-content">
+							<div class="timeline-header">
+								<h3>Software Engineer</h3>
+								<span class="company">IntegraConnect</span>
+								<span class="period">Apr 2025 – Present</span>
+							</div>
+							<p class="timeline-description">
+								Developed scalable backend services using FastAPI to support
+								high-volume healthcare platforms.
+							</p>
+							<ul class="timeline-achievements">
+								<li>Developed scalable backend services using FastAPI</li>
+								<li>
+									Built automation scripts reducing manual overhead by 30%
+								</li>
+								<li>
+									Led Python code reviews ensuring performance and
+									maintainability
+								</li>
+								<li>Mentored junior developers on best practices</li>
+							</ul>
+						</div>
+					</div>
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-content">
+							<div class="timeline-header">
+								<h3>Programmer</h3>
+								<span class="company">IntegraConnect</span>
+								<span class="period">Aug 2022 – Mar 2025</span>
+							</div>
+							<p class="timeline-description">
+								Developed Angular-based frontend modules interacting with Python
+								REST APIs for business applications.
+							</p>
+							<ul class="timeline-achievements">
+								<li>Built 15+ Angular modules with Python API integration</li>
+								<li>Processed and analyzed datasets using Pandas and SQL</li>
+								<li>
+									Implemented workflow automations using Python and Azure
+									Functions
+								</li>
+								<li>Authored comprehensive API documentation</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Education Section -->
+		<section id="education" class="education section">
+			<div class="container">
+				<h2 class="section-title">Education & Certifications</h2>
+				<div class="education-content">
+					<div class="education-card">
+						<div class="education-header">
+							<h3>B.Tech. in Computer Science and Engineering</h3>
+							<span class="education-period">2018 – 2022</span>
+						</div>
+						<p>Dr. Babasaheb Ambedkar Technological University</p>
+						<div class="cgpa">CGPA: 9.42/10</div>
+					</div>
+					<div class="certifications">
+						<h3>Certifications</h3>
+						<div class="cert-grid">
+							<div class="cert-item">
+								AZ-204: Microsoft Certified Azure Developer Associate
+							</div>
+							<div class="cert-item">
+								Machine Learning with Python – Coursera
+							</div>
+							<div class="cert-item">
+								Web Development with Angular – LinkedIn Learning
+							</div>
+							<div class="cert-item">Azure Fundamentals – Microsoft</div>
+							<div class="cert-item">
+								SQL Essential Training – LinkedIn Learning
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Testimonials Section -->
+		<section id="testimonials" class="testimonials section">
+			<div class="container">
+				<h2 class="section-title">Client Testimonials</h2>
+				<div class="testimonials-carousel">
+					<div class="testimonial-card active">
+						<div class="testimonial-content">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<p>
+								"Asazad is an exceptional Python developer who consistently
+								delivers high-quality, scalable solutions. His FastAPI expertise
+								and problem-solving skills are outstanding."
+							</p>
+							<div class="testimonial-author">
+								<div class="author-info">
+									<h4>Rahul Sharma</h4>
+									<span>Senior Technical Lead, IntegraConnect</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testimonial-card">
+						<div class="testimonial-content">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<p>
+								"Working with Asazad has been fantastic. His ability to
+								integrate ML models with production APIs and mentor junior
+								developers makes him invaluable to our team."
+							</p>
+							<div class="testimonial-author">
+								<div class="author-info">
+									<h4>Priya Singh</h4>
+									<span>Project Manager, IntegraConnect</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-controls">
+						<button class="carousel-btn prev" id="prev-testimonial">
+							<i class="fas fa-chevron-left"></i>
+						</button>
+						<button class="carousel-btn next" id="next-testimonial">
+							<i class="fas fa-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact" class="contact section">
+			<div class="container">
+				<h2 class="section-title">Get In Touch</h2>
+				<div class="contact-content">
+					<div class="contact-info">
+						<div class="contact-item">
+							<i class="fas fa-envelope"></i>
+							<div>
+								<h4>Email</h4>
+								<p>asazadpathan31@gmail.com</p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<i class="fas fa-phone"></i>
+							<div>
+								<h4>Phone</h4>
+								<p>+91 9890878387</p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<i class="fas fa-map-marker-alt"></i>
+							<div>
+								<h4>Location</h4>
+								<p>India</p>
+							</div>
+						</div>
+						<div class="social-links">
+							<a
+								href="https://github.com/AsazadPathan31"
+								target="_blank"
+								class="social-link"
+							>
+								<i class="fab fa-github"></i>
+							</a>
+							<a
+								href="https://www.linkedin.com/in/asazad-pathan-563a531b2/"
+								target="_blank"
+								class="social-link"
+							>
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</div>
+					</div>
+					<form class="contact-form" id="contact-form">
+						<div class="form-group">
+							<input
+								type="text"
+								id="name"
+								name="name"
+								class="form-control"
+								placeholder="Your Name"
+								required
+							/>
+						</div>
+						<div class="form-group">
+							<input
+								type="email"
+								id="email"
+								name="email"
+								class="form-control"
+								placeholder="Your Email"
+								required
+							/>
+						</div>
+						<div class="form-group">
+							<textarea
+								id="message"
+								name="message"
+								class="form-control"
+								rows="5"
+								placeholder="Your Message"
+								required
+							></textarea>
+						</div>
+						<button type="submit" class="btn btn--primary btn--full-width">
+							Send Message
+						</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- Project Modal -->
+		<div class="modal hidden" id="project-modal">
+			<div class="modal-overlay" onclick="closeProjectModal()"></div>
+			<div class="modal-content">
+				<button class="modal-close" onclick="closeProjectModal()">
+					<i class="fas fa-times"></i>
+				</button>
+				<div class="modal-body" id="modal-body">
+					<!-- Project details will be inserted here -->
+				</div>
+			</div>
+		</div>
+
+		<!-- Floating Action Button -->
+		<div class="fab-container">
+			<button class="fab" id="fab-main">
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="fab-menu" id="fab-menu">
+				<a href="#hero" class="fab-item" title="Home">
+					<i class="fas fa-home"></i>
+				</a>
+				<a href="#skills" class="fab-item" title="Skills">
+					<i class="fas fa-code"></i>
+				</a>
+				<a href="#projects" class="fab-item" title="Projects">
+					<i class="fas fa-folder"></i>
+				</a>
+				<a href="#contact" class="fab-item" title="Contact">
+					<i class="fas fa-envelope"></i>
+				</a>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
