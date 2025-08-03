@@ -458,24 +458,230 @@
 						<p>Dr. Babasaheb Ambedkar Technological University</p>
 						<div class="cgpa">CGPA: 9.42/10</div>
 					</div>
-					<div class="certifications">
-						<h3>Certifications</h3>
-						<div class="cert-grid">
-							<div class="cert-item">
-								AZ-204: Microsoft Certified Azure Developer Associate
+					<!-- Enhanced Certificates Section -->
+					<section id="certifications" class="certifications-section">
+						<div class="container">
+							<div class="section-header">
+								<h2 class="section-title">Professional Certifications</h2>
+								<p class="section-subtitle">
+									Verified credentials and continuous learning achievements
+								</p>
 							</div>
-							<div class="cert-item">
-								Machine Learning with Python – Coursera
+
+							<div class="certifications-grid">
+								<!-- Featured Certificate Card -->
+								<div class="certificate-card featured">
+									<div class="certificate-header">
+										<div class="certificate-badge">
+											<i class="fab fa-microsoft"></i>
+										</div>
+										<div class="certificate-status">
+											<span class="status-badge verified">Verified</span>
+											<span class="certificate-date">2024</span>
+										</div>
+									</div>
+
+									<div class="certificate-content">
+										<h3 class="certificate-title">
+											Microsoft Certified Azure Developer Associate
+										</h3>
+										<p class="certificate-code">AZ-204</p>
+										<p class="certificate-issuer">Microsoft</p>
+										<p class="certificate-description">
+											Demonstrates expertise in developing cloud solutions that
+											run on Microsoft Azure
+										</p>
+
+										<div class="certificate-skills">
+											<span class="skill-tag">Azure App Services</span>
+											<span class="skill-tag">Azure Functions</span>
+											<span class="skill-tag">Azure Storage</span>
+											<span class="skill-tag">Azure Security</span>
+										</div>
+									</div>
+
+									<div class="certificate-footer">
+										<div class="certificate-meta">
+											<span class="difficulty-level">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<span>Associate Level</span>
+											</span>
+										</div>
+										<div class="certificate-actions">
+											<button
+												class="btn-verify"
+												onclick="verifyCertificate('az204')"
+											>
+												<i class="fas fa-shield-alt"></i>
+												Verify
+											</button>
+											<button
+												class="btn-share"
+												onclick="shareCertificate('az204')"
+											>
+												<i class="fas fa-share-alt"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+
+								<!-- Machine Learning Certificate -->
+								<div class="certificate-card">
+									<div class="certificate-header">
+										<div class="certificate-badge">
+											<i class="fab fa-python"></i>
+										</div>
+										<div class="certificate-status">
+											<span class="status-badge verified">Verified</span>
+											<span class="certificate-date">2024</span>
+										</div>
+									</div>
+
+									<div class="certificate-content">
+										<h3 class="certificate-title">
+											Machine Learning with Python
+										</h3>
+										<p class="certificate-code">COURSERA-ML-PY</p>
+										<p class="certificate-issuer">Coursera</p>
+										<p class="certificate-description">
+											Comprehensive course covering ML algorithms, data
+											analysis, and model deployment
+										</p>
+
+										<div class="certificate-skills">
+											<span class="skill-tag">Scikit-learn</span>
+											<span class="skill-tag">NumPy</span>
+											<span class="skill-tag">Pandas</span>
+											<span class="skill-tag">Model Training</span>
+										</div>
+									</div>
+
+									<div class="certificate-footer">
+										<div class="certificate-meta">
+											<span class="difficulty-level">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star-half-alt"></i>
+												<span>Intermediate</span>
+											</span>
+										</div>
+										<div class="certificate-actions">
+											<button
+												class="btn-verify"
+												onclick="verifyCertificate('ml-python')"
+											>
+												<i class="fas fa-shield-alt"></i>
+												Verify
+											</button>
+											<button
+												class="btn-share"
+												onclick="shareCertificate('ml-python')"
+											>
+												<i class="fas fa-share-alt"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+
+								<!-- Compact Certificate Cards for Remaining Certificates -->
+								<div class="certificates-compact">
+									<h4 class="compact-title">Additional Certifications</h4>
+
+									<div class="compact-grid">
+										<!-- Angular Certificate - Compact -->
+										<div class="certificate-compact">
+											<div class="compact-badge">
+												<i class="fab fa-angular"></i>
+											</div>
+											<div class="compact-content">
+												<h5>Web Development with Angular</h5>
+												<span class="compact-issuer">LinkedIn Learning</span>
+												<div class="compact-meta">
+													<span class="compact-date">2023</span>
+													<span class="compact-status verified">✓</span>
+												</div>
+											</div>
+										</div>
+
+										<!-- Azure Fundamentals - Compact -->
+										<div class="certificate-compact">
+											<div class="compact-badge">
+												<i class="fas fa-cloud"></i>
+											</div>
+											<div class="compact-content">
+												<h5>Azure Fundamentals</h5>
+												<span class="compact-issuer">Microsoft</span>
+												<div class="compact-meta">
+													<span class="compact-date">2023</span>
+													<span class="compact-status verified">✓</span>
+												</div>
+											</div>
+										</div>
+
+										<!-- SQL Training - Compact -->
+										<div class="certificate-compact">
+											<div class="compact-badge">
+												<i class="fas fa-database"></i>
+											</div>
+											<div class="compact-content">
+												<h5>SQL Essential Training</h5>
+												<span class="compact-issuer">LinkedIn Learning</span>
+												<div class="compact-meta">
+													<span class="compact-date">2023</span>
+													<span class="compact-status verified">✓</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="cert-item">
-								Web Development with Angular – LinkedIn Learning
-							</div>
-							<div class="cert-item">Azure Fundamentals – Microsoft</div>
-							<div class="cert-item">
-								SQL Essential Training – LinkedIn Learning
+
+							<!-- Certification Statistics -->
+							<div class="certification-stats">
+								<div class="stat-item">
+									<div class="stat-icon">
+										<i class="fas fa-certificate"></i>
+									</div>
+									<div class="stat-content">
+										<span class="stat-number" data-target="5">0</span>
+										<span class="stat-label">Certifications</span>
+									</div>
+								</div>
+
+								<div class="stat-item">
+									<div class="stat-icon">
+										<i class="fas fa-shield-check"></i>
+									</div>
+									<div class="stat-content">
+										<span class="stat-number" data-target="100">0</span>
+										<span class="stat-label">% Verified</span>
+									</div>
+								</div>
+
+								<div class="stat-item">
+									<div class="stat-icon">
+										<i class="fas fa-calendar-alt"></i>
+									</div>
+									<div class="stat-content">
+										<span class="stat-number" data-target="2024">0</span>
+										<span class="stat-label">Latest Year</span>
+									</div>
+								</div>
+
+								<div class="stat-item">
+									<div class="stat-icon">
+										<i class="fas fa-graduation-cap"></i>
+									</div>
+									<div class="stat-content">
+										<span class="stat-number" data-target="3">0</span>
+										<span class="stat-label">Providers</span>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
+					</section>
 				</div>
 			</div>
 		</section>

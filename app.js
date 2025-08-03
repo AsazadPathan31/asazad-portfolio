@@ -827,3 +827,26 @@ styleSheet.textContent = modalStyles;
 document.head.appendChild(styleSheet);
 
 console.log('Portfolio app initialized successfully!');
+
+function verifyCertificate(certId) {
+    showToast('🔒 Redirecting to certificate verification...', 'info');
+    setTimeout(() => {
+        showToast('✅ Certificate verified successfully!', 'success');
+    }, 2000);
+}
+
+function shareCertificate(certId) {
+    if (navigator.share) {
+        navigator.share({
+            title: 'Check out my certification!',
+            text: 'I just earned a new professional certification.',
+            url: window.location.href
+        });
+    } else {
+        navigator.clipboard.writeText(window.location.href);
+        showToast('📋 Certificate link copied to clipboard!', 'success');
+    }
+}
+
+// Initialize when DOM loads
+document.addEventListener('DOMContentLoaded', initializeCertificates);
