@@ -34,8 +34,8 @@ function initializeApp() {
         },
         {
             text: "Working with Asazad has been fantastic. His ability to integrate ML models with production APIs and mentor junior developers makes him invaluable to our team.",
-            author: "Abdul Rahmin",
-            role: "Project Manager, IntegraConnect"
+            author: "Abdul Rahim",
+            role: "Senior Project Manager, IntegraConnect"
         }
     ];
 }
