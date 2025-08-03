@@ -407,6 +407,17 @@ pre code {
 	position: relative;
 }
 
+.fab.fa-github,
+.fas,
+.far,
+.fab {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	vertical-align: middle !important;
+	line-height: 1 !important;
+}
+
 .btn:focus-visible {
 	outline: none;
 	box-shadow: var(--focus-ring);
@@ -775,8 +786,8 @@ select.form-control {
 /* Theme Toggle */
 .theme-toggle {
 	position: fixed;
-	top: var(--space-20);
-	right: var(--space-20);
+	bottom: var(--space-20);
+	left: var(--space-20);
 	z-index: 1000;
 	background: var(--color-surface);
 	border: 1px solid var(--color-border);
@@ -1255,13 +1266,21 @@ select.form-control {
 	margin: 0;
 }
 
+/* Fixed project badge - no text wrapping */
 .project-badge {
+	display: inline-block;
 	background: var(--color-primary);
 	color: var(--color-btn-primary-text);
-	padding: var(--space-4) var(--space-12);
-	border-radius: var(--radius-full);
-	font-size: var(--font-size-xs);
-	font-weight: var(--font-weight-medium);
+	padding: 0.25rem 0.75rem;
+	border-radius: 25px;
+	font-size: 0.75rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	white-space: nowrap; /* Prevents text wrapping */
+	min-width: max-content; /* Ensures badge is wide enough */
+	text-align: center;
+	line-height: 1.2;
 }
 
 .project-description {
@@ -1588,75 +1607,67 @@ select.form-control {
 }
 
 /* Modal */
+/* Ensure modal overlays are centered and full-screen */
 .modal {
 	position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 1000;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: all var(--duration-normal) var(--ease-standard);
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 9999;
+	padding: 1rem;
+	box-sizing: border-box;
 }
 
 .modal.hidden {
-	opacity: 0;
-	pointer-events: none;
+	display: none;
 }
 
-.modal-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(0, 0, 0, 0.8);
-	backdrop-filter: blur(5px);
-}
-
+/* Modal content container */
 .modal-content {
-	background: var(--color-surface);
-	border-radius: var(--radius-lg);
-	max-width: 600px;
-	width: 90%;
-	max-height: 80vh;
-	overflow-y: auto;
-	position: relative;
-	z-index: 1001;
-	animation: modalSlideIn 0.3s ease-out;
+	position: relative; /* For absolute positioning of close button */
+	max-width: 800px;
+	width: 100%;
+	max-height: 90vh; /* Limit height for scroll */
+	background-color: var(--color-surface);
+	border-radius: 8px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column; /* To stack header and body, if needed */
+	overflow: hidden; /* prevent overflow outside */
+	padding: 1rem;
 }
 
-@keyframes modalSlideIn {
-	from {
-		transform: translateY(-50px);
-		opacity: 0;
-	}
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-
+/* Sticky close button */
 .modal-close {
 	position: absolute;
-	top: var(--space-16);
-	right: var(--space-16);
+	top: 10px;
+	right: 10px;
 	background: transparent;
 	border: none;
-	font-size: var(--font-size-xl);
-	color: var(--color-text-secondary);
+	font-size: 1.5rem;
 	cursor: pointer;
-	transition: color var(--duration-fast) var(--ease-standard);
+	z-index: 10;
+	color: var(--color-text);
+	padding: 0.25rem;
+	transition: all 0.2s;
 }
 
 .modal-close:hover {
-	color: var(--color-text);
+	color: var(--color-primary);
 }
 
-.modal-body {
-	padding: var(--space-32);
+/* Modal body with scrollable content */
+#modal-body {
+	margin-top: 2.5rem; /* Space for close button overlap if needed */
+	overflow-y: auto; /* enable vertical scroll */
+	flex: 1 1 auto; /* Take remaining space */
+	padding: 1rem 0;
+	width: 100%;
 }
 
 /* FAB */
@@ -1957,4 +1968,94 @@ html {
 	to {
 		transform: rotate(360deg);
 	}
+}
+
+.footer-glass {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(var(--color-surface), 0.1);
+	backdrop-filter: blur(20px);
+	border-top: 1px solid rgba(var(--color-teal-500-rgb), 0.2);
+	padding: 1.25rem 0;
+	z-index: 100;
+	overflow: hidden;
+}
+
+.glass-particles {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.particle {
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	background: var(--color-primary);
+	border-radius: 50%;
+	opacity: 0.3;
+}
+
+.particle:nth-child(1) {
+	top: 20%;
+	left: 10%;
+	animation: float 4s ease-in-out infinite;
+}
+
+.particle:nth-child(2) {
+	top: 60%;
+	left: 80%;
+	animation: float 3s ease-in-out infinite reverse;
+}
+
+.glass-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.copyright-text {
+	font-size: 0.9rem;
+	color: var(--color-text);
+	font-weight: 500;
+}
+
+.signature {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.signature-text {
+	font-family: cursive;
+	font-size: 1.1rem;
+	color: var(--color-primary);
+	font-weight: 600;
+}
+
+.signature-line {
+	width: 40px;
+	height: 1px;
+	background: linear-gradient(90deg, var(--color-primary), transparent);
+}
+
+@keyframes float {
+	0%,
+	100% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+body {
+	padding-bottom: 85px;
 }
