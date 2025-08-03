@@ -29,12 +29,12 @@ function initializeApp() {
     testimonials = [
         {
             text: "Asazad is an exceptional Python developer who consistently delivers high-quality, scalable solutions. His FastAPI expertise and problem-solving skills are outstanding.",
-            author: "Rahul Sharma",
+            author: "Nitheesh S",
             role: "Senior Technical Lead, IntegraConnect"
         },
         {
             text: "Working with Asazad has been fantastic. His ability to integrate ML models with production APIs and mentor junior developers makes him invaluable to our team.",
-            author: "Priya Singh",
+            author: "Abdul Rahmin",
             role: "Project Manager, IntegraConnect"
         }
     ];
