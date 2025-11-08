@@ -146,13 +146,12 @@ function initializeParticles() {
 function initializeTypingAnimation() {
     const typingText = document.getElementById('typing-text');
     const texts = [
-        'Python Developer',
-        'FastAPI Expert',
-        'Angular Developer',
-        'Machine Learning Engineer',
-        'Azure Cloud Developer'
+        'Full-Stack Developer',
+        'Python & Angular Specialist',
+        'Cloud-Ready Developer',
+        'AI Integration & Automation Engineer'
     ];
-    
+
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
