@@ -1,6 +1,5 @@
 // Global variables
 let currentTestimonial = 0;
-let testimonials = [];
 let particles = [];
 let animationFrame;
 
@@ -24,20 +23,6 @@ function initializeApp() {
     initializeContactForm();
     initializeProgressBars();
     initializeSmoothScrolling();
-    
-    // Load testimonials data
-    testimonials = [
-        {
-            text: "Asazad is an exceptional Python developer who consistently delivers high-quality, scalable solutions. His FastAPI expertise and problem-solving skills are outstanding.",
-            author: "Nitheesh S",
-            role: "Senior Technical Lead, IntegraConnect"
-        },
-        {
-            text: "Working with Asazad has been fantastic. His ability to integrate ML models with production APIs and mentor junior developers makes him invaluable to our team.",
-            author: "Abdul Rahim",
-            role: "Senior Project Manager, IntegraConnect"
-        }
-    ];
 }
 
 // Theme Toggle
@@ -324,87 +309,108 @@ window.openProjectModal = function(projectId) {
     const modalBody = document.getElementById('modal-body');
     
     const projects = {
-        1: {
-            title: 'Disease Risk Prediction System',
-            category: 'Machine Learning',
-            description: 'Developed a comprehensive disease risk prediction system using machine learning algorithms to analyze patient data and predict the likelihood of various diseases including diabetes and heart disease.',
-            technologies: ['Python', 'Scikit-learn', 'FastAPI', 'Angular', 'Pandas', 'Seaborn'],
-            features: [
-                'Data preprocessing and feature engineering',
-                'Multiple ML classifiers (Logistic Regression, Random Forest, SVM)',
-                'Achieved up to 92% accuracy',
-                'REST API deployment using FastAPI',
-                'Interactive Angular dashboard',
-                'Real-time prediction visualization'
-            ],
-            achievements: [
-                '92% prediction accuracy',
-                'Integration with hospital systems',
-                'Real-time data processing',
-                'Comprehensive data visualization'
-            ]
-        },
-        2: {
-            title: 'Hospital Management System',
-            category: 'Full Stack',
-            description: 'A comprehensive full-stack application designed to streamline hospital operations including patient management, appointment scheduling, and staff allocation with secure role-based access control.',
-            technologies: ['Angular', 'FastAPI', 'SQL Server', 'Azure DevOps', 'JWT Authentication'],
-            features: [
-                'Patient records management',
-                'Appointment scheduling system',
-                'Staff allocation and management',
-                'Role-based access control (Admin, Doctor, Patient)',
-                'Patient history tracking',
-                'Secure authentication system'
-            ],
-            achievements: [
-                'Deployed on Azure App Service',
-                'CI/CD pipeline implementation',
-                'Optimized database queries',
-                'Enhanced security measures'
-            ]
-        },
-        3: {
-            title: 'Healthcare Automation Suite',
-            category: 'Automation',
-            description: 'Built a comprehensive automation suite using Python and Azure Functions to streamline healthcare processes and reduce manual overhead by 30% for high-volume platforms.',
-            technologies: ['Python', 'Azure Functions', 'FastAPI', 'SQL Server', 'Azure DevOps'],
-            features: [
-                'Automated data processing workflows',
-                'Report generation automation',
-                'Patient data synchronization',
-                'Automated notification systems',
-                'Error handling and logging',
-                'Scalable serverless architecture'
-            ],
-            achievements: [
-                '30% reduction in manual overhead',
-                'Improved process efficiency',
-                'Automated error detection',
-                'Real-time monitoring and alerts'
-            ]
-        },
-        4: {
-            title: 'Data Analytics Dashboard',
-            category: 'Data Analytics',
-            description: 'Created a comprehensive analytics dashboard providing real-time insights for business decision-makers with advanced data visualization and processing capabilities.',
-            technologies: ['Angular', 'Python', 'Pandas', 'SQL Server', 'Chart.js'],
-            features: [
-                'Real-time data processing',
-                'Interactive charts and graphs',
-                'Custom report generation',
-                'Data export functionality',
-                'Advanced filtering options',
-                'Mobile-responsive design'
-            ],
-            achievements: [
-                'Real-time data insights',
-                'Improved decision making',
-                'Enhanced data visualization',
-                'Streamlined reporting process'
-            ]
-        }
-    };
+    1: {
+        title: 'Denial Claim Management System',
+        category: 'Healthcare Automation',
+        description: 'Developed a robust denial claim management system to automate and optimize the process of identifying, analyzing, and resolving denied insurance claims in healthcare organizations.',
+        technologies: ['Python', 'FastAPI', 'Angular', 'SQL Server', 'Pandas', 'Azure DevOps'],
+        features: [
+            'Automated claim validation and tracking',
+            'Integration with EHR and insurance APIs',
+            'Real-time denial analysis dashboard',
+            'Rule-based claim categorization',
+            'Automated resubmission workflows',
+            'Detailed audit trail and reporting'
+        ],
+        achievements: [
+            'Reduced claim processing time by 40%',
+            'Improved reimbursement accuracy',
+            'Seamless API integration with insurance providers',
+            'Enhanced financial transparency for healthcare administrators'
+        ]
+    },
+    2: {
+        title: 'Medical Chatbot Assistant',
+        category: 'AI & NLP',
+        description: 'Built an intelligent medical chatbot capable of understanding patient symptoms, providing preliminary diagnosis guidance, and assisting with appointment scheduling using NLP and machine learning.',
+        technologies: ['Python', 'TensorFlow', 'FastAPI', 'Angular', 'NLTK', 'Dialogflow'],
+        features: [
+            'Symptom-based health guidance',
+            'Context-aware conversation flow',
+            'Appointment scheduling integration',
+            'Multi-language support',
+            'Voice and text-based interaction',
+            'Secure data handling with encryption'
+        ],
+        achievements: [
+            'Handled over 10,000+ patient queries',
+            'Reduced hospital call volume by 35%',
+            'Integrated with hospital management systems',
+            'Enhanced patient engagement and accessibility'
+        ]
+    },
+    3: {
+        title: 'House Price Prediction System',
+        category: 'Machine Learning',
+        description: 'Implemented a predictive analytics model to estimate house prices based on location, features, and market data using regression algorithms and interactive visual dashboards.',
+        technologies: ['Python', 'Scikit-learn', 'FastAPI', 'Angular', 'Pandas', 'Matplotlib'],
+        features: [
+            'Data preprocessing and feature scaling',
+            'Regression models (Linear, Lasso, Random Forest)',
+            'Interactive visualization of predictions',
+            'REST API deployment using FastAPI',
+            'User-friendly Angular frontend',
+            'CSV upload and result export'
+        ],
+        achievements: [
+            'Achieved 95% R² accuracy on test data',
+            'Enabled real-time market analysis',
+            'Scalable and modular architecture',
+            'Enhanced decision support for property investors'
+        ]
+    },
+    4: {
+        title: 'Market Segmentation & Classification System',
+        category: 'Data Science',
+        description: 'Designed a data science project focused on customer segmentation and classification using unsupervised and supervised learning techniques to enhance targeted marketing strategies.',
+        technologies: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib', 'Seaborn', 'FastAPI'],
+        features: [
+            'Data cleaning and preprocessing pipeline',
+            'Clustering using K-Means and DBSCAN',
+            'Customer classification using Decision Trees and SVM',
+            'Feature importance visualization',
+            'Interactive segmentation dashboard',
+            'Report generation module'
+        ],
+        achievements: [
+            'Improved marketing ROI by 25%',
+            'Automated customer segmentation workflow',
+            'Integrated predictive analytics',
+            'Enhanced business insights through visualization'
+        ]
+    },
+    5: {
+        title: 'Blogging Platform',
+        category: 'Full Stack Web Development',
+        description: 'Developed a dynamic and responsive blogging platform with Angular for the frontend and FastAPI for the backend, supporting post creation, commenting, and user authentication.',
+        technologies: ['Angular', 'FastAPI', 'SQLite', 'JWT Authentication', 'Azure App Service'],
+        features: [
+            'User authentication and role-based access',
+            'Post creation and rich-text editing',
+            'Commenting and like system',
+            'Tag-based content categorization',
+            'Responsive and mobile-friendly design',
+            'Admin dashboard for post management'
+        ],
+        achievements: [
+            'Deployed successfully on Azure Cloud',
+            'Integrated CI/CD pipeline for faster deployment',
+            'Optimized API performance and security',
+            'Enhanced user engagement and content visibility'
+        ]
+    }
+};
+
     
     const project = projects[projectId];
     if (!project) return;
@@ -439,10 +445,7 @@ window.openProjectModal = function(projectId) {
             </div>
             
             <div class="project-modal-actions">
-                <button class="btn btn--primary" onclick="window.open('https://github.com/asazadpathan', '_blank')">
-                    <i class="fas fa-external-link-alt"></i> Live Demo
-                </button>
-                <button class="btn btn--outline" onclick="window.open('https://github.com/asazadpathan', '_blank')">
+                <button class="btn btn--outline" onclick="window.open('https://github.com/AsazadPathan31?tab=repositories', '_blank')">
                     <i class="fab fa-github"></i> View Code
                 </button>
             </div>
@@ -552,39 +555,182 @@ function initializeScrollAnimations() {
 }
 
 // Contact Form with improved feedback
-function initializeContactForm() {
-    const contactForm = document.getElementById('contact-form');
-    
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const formData = new FormData(contactForm);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const message = formData.get('message');
-        
-        // Add loading state
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-        submitBtn.textContent = 'Sending...';
-        submitBtn.disabled = true;
-        submitBtn.classList.add('loading');
-        
-        // Simulate form submission with visible feedback
-        setTimeout(() => {
-            // Create and show success message
-            showNotification('Thank you for your message! I will get back to you soon.', 'success');
-            contactForm.reset();
-            
-            // Remove loading state
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-            submitBtn.classList.remove('loading');
-        }, 2000);
-        
-        console.log('Form submitted:', { name, email, message });
-    });
+// Configuration: fill these in or leave null to use fallbacks.
+// For EmailJS: sign up at https://www.emailjs.com/ and get userID, serviceID and templateID.
+// For Formspree: create a form at https://formspree.io and get a form endpoint like https://formspree.io/f/xxxxxx
+const CONTACT_CONFIG = {
+  // EmailJS config (client-side). Set to null if you don't want to use EmailJS
+  emailjs: {
+    userID: 'Asazad Pathan',       // e.g. 'user_xxx' (replace)
+    serviceID: 'service_id6x70b', // e.g. 'service_xxx' (replace)
+    templateID: 'template_nqwbndf'// e.g. 'template_xxx' (replace)
+  },
+
+  // Formspree endpoint (fallback). Set to null if not using Formspree
+  formspreeEndpoint: 'https://formspree.io/f/mrbrzlyw' // replace or set to null
+
+  // If both are null, it will fallback to mailto: (opens user's email client)
+};
+
+function showNotification(message, type = 'success') {
+  // Simple non-blocking notification under the form (keeps everything self-contained)
+  const existing = document.querySelector('.contact-alert');
+  if (existing) existing.remove();
+
+  const el = document.createElement('div');
+  el.className = `contact-alert contact-alert--${type}`;
+  el.textContent = message;
+  el.style.cssText = `
+    margin-top:12px;
+    padding:12px 16px;
+    border-radius:6px;
+    font-size:14px;
+    max-width:600px;
+  `;
+  // basic colors (you can replace with site CSS classes)
+  if (type === 'success') el.style.background = '#e6ffed';
+  else el.style.background = '#ffecec';
+
+  const form = document.getElementById('contact-form');
+  form.insertAdjacentElement('afterend', el);
+
+  setTimeout(() => el.remove(), 6000);
 }
+
+/**
+ * initializeContactForm - modern replacement with live send options + fallbacks
+ */
+function initializeContactForm() {
+  const contactForm = document.getElementById('contact-form');
+  if (!contactForm) return console.warn('Contact form not found (id="contact-form")');
+
+  // Initialize EmailJS SDK if configured and script present
+  if (CONTACT_CONFIG.emailjs && window.emailjs && CONTACT_CONFIG.emailjs.userID) {
+    try {
+      // Initialize only once
+      if (!emailjs._initialized) {
+        emailjs.init(CONTACT_CONFIG.emailjs.userID);
+        emailjs._initialized = true;
+      }
+    } catch (err) {
+      console.warn('EmailJS init error:', err);
+    }
+  }
+
+  contactForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    // get form values
+    const formData = new FormData(contactForm);
+    const name = (formData.get('name') || '').trim();
+    const email = (formData.get('email') || '').trim();
+    const message = (formData.get('message') || '').trim();
+
+    // simple validation
+    if (!name || !email || !message) {
+      showNotification('Please fill in all fields.', 'error');
+      return;
+    }
+    const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRe.test(email)) {
+      showNotification('Please enter a valid email address.', 'error');
+      return;
+    }
+
+    // UI: loading state
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+    submitBtn.classList.add('loading');
+
+    const payload = {
+      name,
+      email,
+      message,
+      timestamp: new Date().toISOString()
+    };
+
+    // Try EmailJS first (client-side)
+    const emailjsCfg = CONTACT_CONFIG.emailjs;
+    if (emailjsCfg && window.emailjs && emailjsCfg.serviceID && emailjsCfg.templateID) {
+      try {
+        // map template params: adjust keys to match your EmailJS template variables
+        const templateParams = {
+          from_name: name,
+          from_email: email,
+          message: message,
+          sent_at: payload.timestamp
+        };
+
+        await emailjs.send(emailjsCfg.serviceID, emailjsCfg.templateID, templateParams);
+        showNotification('Message sent successfully. Thank you!', 'success');
+        contactForm.reset();
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('loading');
+        return;
+      } catch (err) {
+        console.warn('EmailJS send failed:', err);
+        // fallthrough to next option
+      }
+    }
+
+    // Next fallback: Formspree (simple POST)
+    if (CONTACT_CONFIG.formspreeEndpoint) {
+      try {
+        const resp = await fetch(CONTACT_CONFIG.formspreeEndpoint, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: JSON.stringify({
+            name: payload.name,
+            email: payload.email,
+            message: payload.message
+          })
+        });
+
+        if (resp.ok) {
+          showNotification('Message sent successfully via Formspree. Thank you!', 'success');
+          contactForm.reset();
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+          submitBtn.classList.remove('loading');
+          return;
+        } else {
+          const body = await resp.json().catch(() => null);
+          console.warn('Formspree error', resp.status, body);
+          // fallthrough to mailto fallback
+        }
+      } catch (err) {
+        console.warn('Formspree fetch error:', err);
+        // fallthrough to mailto fallback
+      }
+    }
+
+    // Final fallback: open user's email client (mailto)
+    try {
+      showNotification('No server available — opening your email client as fallback.', 'error');
+      const to = 'asazadpathan31@gmail.com';
+      const subject = encodeURIComponent(`Portfolio contact from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+      // Small delay so the user sees the notification before the client opens
+      setTimeout(() => {
+        window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+      }, 400);
+    } catch (err) {
+      console.error('mailto fallback failed:', err);
+      showNotification('Could not open email client. Please contact directly via email.', 'error');
+    } finally {
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+      submitBtn.classList.remove('loading');
+    }
+  });
+}
+
+// Auto-initialize when DOM ready
+document.addEventListener('DOMContentLoaded', initializeContactForm);
+
 
 // Notification system for form feedback
 function showNotification(message, type = 'success') {

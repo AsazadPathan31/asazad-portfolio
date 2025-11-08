@@ -283,29 +283,31 @@
 					<button class="filter-btn" data-filter="Full Stack">
 						Full Stack
 					</button>
-					<button class="filter-btn" data-filter="Automation">
-						Automation
+					<button class="filter-btn" data-filter="Healthcare Automation">
+						Healthcare Automation
 					</button>
-					<button class="filter-btn" data-filter="Data Analytics">
-						Data Analytics
+					<button class="filter-btn" data-filter="AI & NLP">AI & NLP</button>
+					<button class="filter-btn" data-filter="Data Science">
+						Data Science
 					</button>
 				</div>
 				<div class="projects-grid" id="projects-grid">
-					<div class="project-card" data-category="Machine Learning">
+					<div class="project-card" data-category="Healthcare Automation">
 						<div class="project-header">
-							<h3>Disease Risk Prediction System</h3>
-							<span class="project-badge">Machine Learning</span>
+							<h3>Denial Claim Management System</h3>
+							<span class="project-badge">Healthcare Automation</span>
 						</div>
 						<p class="project-description">
-							Developed a disease risk prediction model using patient datasets
-							and Scikit-learn, achieving up to 92% accuracy with multiple
-							classifiers.
+							Developed a robust denial claim management system to automate
+							identification, analysis, and resolution of denied insurance
+							claims — integrating with EHR and insurer APIs and providing
+							real-time analytics.
 						</p>
 						<div class="project-tech">
 							<span class="tech-tag">Python</span>
-							<span class="tech-tag">Scikit-learn</span>
 							<span class="tech-tag">FastAPI</span>
 							<span class="tech-tag">Angular</span>
+							<span class="tech-tag">SQL Server</span>
 						</div>
 						<div class="project-actions">
 							<button
@@ -316,21 +318,22 @@
 							</button>
 						</div>
 					</div>
-					<div class="project-card" data-category="Full Stack">
+
+					<div class="project-card" data-category="AI & NLP">
 						<div class="project-header">
-							<h3>Hospital Management System</h3>
-							<span class="project-badge">Full Stack</span>
+							<h3>Medical Chatbot Assistant</h3>
+							<span class="project-badge">AI &amp; NLP</span>
 						</div>
 						<p class="project-description">
-							Full-stack application using Angular and FastAPI to manage patient
-							records, appointments, and staff allocations with role-based
-							access control.
+							Built an intelligent medical chatbot that understands symptoms,
+							provides preliminary guidance, and assists with appointment
+							scheduling using NLP and ML models with secure data handling.
 						</p>
 						<div class="project-tech">
-							<span class="tech-tag">Angular</span>
+							<span class="tech-tag">Python</span>
+							<span class="tech-tag">TensorFlow</span>
 							<span class="tech-tag">FastAPI</span>
-							<span class="tech-tag">SQL Server</span>
-							<span class="tech-tag">Azure DevOps</span>
+							<span class="tech-tag">Angular</span>
 						</div>
 						<div class="project-actions">
 							<button
@@ -341,20 +344,22 @@
 							</button>
 						</div>
 					</div>
-					<div class="project-card" data-category="Automation">
+
+					<div class="project-card" data-category="Machine Learning">
 						<div class="project-header">
-							<h3>Healthcare Automation Suite</h3>
-							<span class="project-badge">Automation</span>
+							<h3>House Price Prediction System</h3>
+							<span class="project-badge">Machine Learning</span>
 						</div>
 						<p class="project-description">
-							Built automation scripts in Python and Azure Functions to reduce
-							manual overhead by 30% for high-volume healthcare platforms.
+							Implemented a predictive analytics model to estimate house prices
+							from location, features and market data using regression
+							algorithms and an interactive prediction dashboard.
 						</p>
 						<div class="project-tech">
 							<span class="tech-tag">Python</span>
-							<span class="tech-tag">Azure Functions</span>
+							<span class="tech-tag">Scikit-learn</span>
 							<span class="tech-tag">FastAPI</span>
-							<span class="tech-tag">SQL Server</span>
+							<span class="tech-tag">Angular</span>
 						</div>
 						<div class="project-actions">
 							<button
@@ -365,25 +370,53 @@
 							</button>
 						</div>
 					</div>
-					<div class="project-card" data-category="Data Analytics">
+
+					<div class="project-card" data-category="Data Science">
 						<div class="project-header">
-							<h3>Data Analytics Dashboard</h3>
-							<span class="project-badge">Data Analytics</span>
+							<h3>Market Segmentation &amp; Classification</h3>
+							<span class="project-badge">Data Science</span>
 						</div>
 						<p class="project-description">
-							Created comprehensive analytics dashboard using Angular and Python
-							for business decision-makers with real-time data processing.
+							Designed customer segmentation and classification pipelines using
+							clustering (K-Means, DBSCAN) and supervised models to enable
+							targeted marketing and actionable business insights.
 						</p>
 						<div class="project-tech">
-							<span class="tech-tag">Angular</span>
 							<span class="tech-tag">Python</span>
+							<span class="tech-tag">Scikit-learn</span>
 							<span class="tech-tag">Pandas</span>
-							<span class="tech-tag">SQL Server</span>
+							<span class="tech-tag">Matplotlib</span>
 						</div>
 						<div class="project-actions">
 							<button
 								class="btn btn--sm btn--primary"
 								onclick="openProjectModal(4)"
+							>
+								View Details
+							</button>
+						</div>
+					</div>
+
+					<div class="project-card" data-category="Full Stack">
+						<div class="project-header">
+							<h3>Blogging Platform</h3>
+							<span class="project-badge">Full Stack</span>
+						</div>
+						<p class="project-description">
+							Developed a dynamic blogging platform with Angular frontend and
+							FastAPI backend supporting rich-text posts, commenting, role-based
+							access and an admin dashboard for content management.
+						</p>
+						<div class="project-tech">
+							<span class="tech-tag">Angular</span>
+							<span class="tech-tag">FastAPI</span>
+							<span class="tech-tag">SQLite</span>
+							<span class="tech-tag">JWT Authentication</span>
+						</div>
+						<div class="project-actions">
+							<button
+								class="btn btn--sm btn--primary"
+								onclick="openProjectModal(5)"
 							>
 								View Details
 							</button>
@@ -692,10 +725,12 @@
 		</section>
 
 		<!-- Testimonials Section -->
+		<!-- Testimonials Section -->
 		<section id="testimonials" class="testimonials section">
 			<div class="container">
 				<h2 class="section-title">Client Testimonials</h2>
 				<div class="testimonials-carousel">
+					<!-- Testimonial 1 -->
 					<div class="testimonial-card active">
 						<div class="testimonial-content">
 							<div class="stars">
@@ -706,9 +741,10 @@
 								<i class="fas fa-star"></i>
 							</div>
 							<p>
-								"Asazad is an exceptional Python developer who consistently
-								delivers high-quality, scalable solutions. His FastAPI expertise
-								and problem-solving skills are outstanding."
+								Asazad is an exceptional problem solver who approaches every
+								challenge with clarity and creativity. He consistently delivers
+								high-quality, scalable solutions and demonstrates a strong
+								commitment to excellence.
 							</p>
 							<div class="testimonial-author">
 								<div class="author-info">
@@ -718,6 +754,8 @@
 							</div>
 						</div>
 					</div>
+
+					<!-- Testimonial 2 -->
 					<div class="testimonial-card">
 						<div class="testimonial-content">
 							<div class="stars">
@@ -728,9 +766,9 @@
 								<i class="fas fa-star"></i>
 							</div>
 							<p>
-								"Working with Asazad has been fantastic. His ability to
-								integrate ML models with production APIs and mentor junior
-								developers makes him invaluable to our team."
+								Working with Asazad has been fantastic. His problem-solving
+								mindset, consistent 100% sprint delivery, and ability to guide
+								and motivate others make him an invaluable asset to the team.
 							</p>
 							<div class="testimonial-author">
 								<div class="author-info">
@@ -740,6 +778,34 @@
 							</div>
 						</div>
 					</div>
+
+					<!-- Testimonial 3 -->
+					<div class="testimonial-card">
+						<div class="testimonial-content">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<p>
+								Asazad has a remarkable ability to design and deliver unique,
+								reusable, and scalable solutions. His clean development
+								practices, effective demo presentations, and consistent on-time
+								delivery make him a standout performer in every project he
+								contributes to.
+							</p>
+							<div class="testimonial-author">
+								<div class="author-info">
+									<h4>Raghava B</h4>
+									<span>Senior Technical Manager, IntegraConnect</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Carousel Controls -->
 					<div class="carousel-controls">
 						<button class="carousel-btn prev" id="prev-testimonial">
 							<i class="fas fa-chevron-left"></i>
