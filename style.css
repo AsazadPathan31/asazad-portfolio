@@ -2450,3 +2450,7 @@ body {
 	color: var(--color-success);
 	font-weight: 600;
 }
+
+.see-more-link {
+	margin-top: 10px;
+}
